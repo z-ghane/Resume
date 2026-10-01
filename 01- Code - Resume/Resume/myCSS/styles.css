@@ -1,0 +1,310 @@
+/* 
+=========================================================
+Resume's Bootstrap customizations
+========================================================= 
+*/
+
+/* Resume primary color */
+:root {
+	--bs-orange: #06b2c6; /* main color of page*/
+	--bs-primary: #06b2c6;
+	--bs-primary-rgb: 6,178,198;
+	--bs-link-color: #06b2c6;
+	--bs-link-hover-color: #974a2d; /*151,74,45*/
+	/* Resume uses IRANSansXFaNum as the main font */
+	--bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+/* Resume heading typography */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 
+		"Saira Extra Condensed", -apple-system, BlinkMacSystemFont, 
+		"Segoe UI", Roboto, "Helvetica Neue", 
+		Arial, sans-serif, "Apple Color Emoji", 
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 700;
+	color: #343a40;
+	text-transform: uppercase;
+}
+
+/* Resume heading sizes */
+h1,
+.h1 {
+	font-size: calc(1.1rem + 5vw);
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+
+@media (min-width: 1200px) {
+	h1,
+	.h1 {
+		font-size: 5.5rem;
+		margin-bottom: 10px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: calc(1.475rem + 2.7vw);
+}
+
+@media (min-width: 1200px) {
+	h2,
+	.h2 {
+		font-size: 3.5rem;
+	}
+}
+
+h3,
+.h3 {
+	font-size: calc(1.325rem + 0.9vw);
+}
+
+
+@media (min-width: 1200px) {
+	h3,
+	.h3 {
+		font-size: 2rem;
+	}
+}
+
+h5, .h5 {
+	margin-top: 10px;
+}
+
+
+/* Resume display sizes */
+.display-1 {
+	font-size: calc(1.625rem + 4.5vw);
+}
+
+@media (min-width: 1200px) {
+	.display-1 {
+		font-size: 5rem;
+	}
+}
+
+.display-2 {
+	font-size: calc(1.575rem + 3.9vw);
+}
+
+@media (min-width: 1200px) {
+	.display-2 {
+		font-size: 4.5rem;
+	}
+}
+
+.display-3 {
+	font-size: calc(1.525rem + 3.3vw);
+}
+
+@media (min-width: 1200px) {
+	.display-3 {
+		font-size: 4rem;
+	}
+}
+
+.display-4 {
+	font-size: calc(1.475rem + 2.7vw);
+}
+
+@media (min-width: 1200px) {
+	.display-4 {
+		font-size: 3.5rem;
+	}
+}
+
+.display-5 {
+	font-size: calc(1.425rem + 2.1vw);
+}
+
+@media (min-width: 1200px) {
+	.display-5 {
+		font-size: 3rem;
+	}
+}
+
+.display-6 {
+	font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+	.display-6 {
+		font-size: 2.5rem;
+	}
+}
+
+
+/* Resume fs-* sizes */
+@media (min-width: 1200px) {
+	.fs-1 {
+		font-size: 6rem !important;
+	}
+
+	.fs-2 {
+		font-size: 3.5rem !important;
+	}
+
+	.fs-3 {
+		font-size: 2rem !important;
+	}
+
+	.fs-4 {
+		font-size: 1.5rem !important;
+	}
+}
+
+
+/* 
+=========================================================
+			Resume-specific CSS
+=========================================================
+*/
+
+html {
+	direction: rtl;
+}
+
+body {
+	padding-top: 3.375rem;
+	color: #6c757d;
+	direction: rtl;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+@media (min-width: 992px) {
+	body {
+		padding-top: 0;
+		/*rtl*/
+		padding-right: 17rem;
+		padding-left: 0;
+	}
+}
+
+p.lead {
+	font-size: 1.15rem;
+	font-weight: 400;
+}
+
+.subheading {
+	font-family: 
+		"Saira Extra Condensed", -apple-system, BlinkMacSystemFont, 
+		"Segoe UI", Roboto, "Helvetica Neue", 
+		Arial, sans-serif, "Apple Color Emoji", 
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin-top: 20px;
+}
+
+.social-icons .social-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 3.5rem;
+	width: 3.5rem;
+	background-color: #495057;
+	color: #fff;
+	border-radius: 100%;
+	font-size: 1.5rem;
+	/* ---------- icon space */
+	/* RTL social icons */
+	margin-right: 0;
+	margin-left: 1.5rem;
+	margin-inline-end: 1.5rem;
+	margin-inline-start: 0;
+}
+
+	.social-icons .social-icon:last-child {
+		/*rtl*/
+		margin-left: 0;
+	}
+
+	.social-icons .social-icon:last-child {
+		margin-inline-end: 0;
+	}
+
+	.social-icons .social-icon:hover {
+		background-color: #06b2c6;
+	}
+
+.dev-icons {
+	font-size: 3rem;
+}
+
+section.resume-section {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 75rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+	section.resume-section {
+		min-height: 100vh;
+	}
+}
+
+@media (min-width: 992px) {
+	section.resume-section {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+}
+
+section.resume-section .resume-section-content {
+	width: 100%;
+}
+
+.nuget-icon {
+	width: 1.15em;
+	height: 1.15em;
+	vertical-align: -0.2em;
+	filter: brightness(0) invert(1);
+}
+
+
+
+
+/* ------------- */
+.fa-li {
+	right: calc(var(--fa-li-width,2em) * -1);
+	left: auto;
+}
+
+p:has(+ ul) {
+	margin:0px;
+}
+
+.university-logo {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+	margin-inline-end: 10px;
+}
+
+.dev-icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.125em;
+}
+
+
+
+
+#besme {
+	text-align: center;
+}
+
+

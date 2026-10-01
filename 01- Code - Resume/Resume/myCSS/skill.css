@@ -1,0 +1,42 @@
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    
+    font-weight: bold;
+}
+
+.skill-level {
+    display: flex;
+    gap: 5px;
+    margin-inline-start: auto; /* pushes boxes to the left in RTL */
+    padding-left: 20px;
+}
+
+    .skill-level span {
+        width: 18px;
+        height: 18px;
+        background-color: #ddd;
+        border-radius: 3px;
+    }
+
+    .skill-level .filled {
+        background-color: #06b2c6; /* your resume primary color */
+    }
+
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    direction: rtl;
+}
+
+.skill-name {
+    margin-inline-end: 20px;
+}
+
+
+
